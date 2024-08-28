@@ -31,3 +31,10 @@ h1{
 img#andreas{
     border-radius:5px;
 }
+
+p.haandskrift{
+        font-family: "Italianno", cursive;
+        font-weight: 400;
+        font-style: normal;   
+        font-size: 40pt;
+}
