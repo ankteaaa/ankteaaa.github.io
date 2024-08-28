@@ -1,0 +1,33 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:black;
+    color:white;
+
+    text-align:center;
+}
+
+/* HEADER */
+nav{
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    padding-top:10px;
+    padding-bottom:10px;
+
+    margin-bottom:20px;
+}
+nav a, nav a:visited{
+    text-decoration:none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+}
+h1{
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* MAIN */
+img#andreas{
+    border-radius:5px;
+}
