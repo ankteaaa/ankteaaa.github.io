@@ -25,6 +25,10 @@ h1{
     font-weight: 400;
     font-style: normal;
 }
+#vid_matrix{
+    padding-top:-100px;
+    padding-bottom:-100px;
+}
 
 
 /* MAIN */
@@ -37,4 +41,8 @@ p.haandskrift{
         font-weight: 400;
         font-style: normal;   
         font-size: 40pt;
+}
+
+.rounded{
+    border-radius:20px;
 }
