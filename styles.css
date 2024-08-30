@@ -24,6 +24,7 @@ h1{
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
+    font-size:40pt;
 }
 #vid_matrix{
     padding-top:-100px;
@@ -32,6 +33,10 @@ h1{
 
 
 /* MAIN */
+h2{
+    font-size:20pt;
+}
+
 img#andreas{
     border-radius:5px;
 }
@@ -40,7 +45,7 @@ p.haandskrift{
         font-family: "Italianno", cursive;
         font-weight: 400;
         font-style: normal;   
-        font-size: 40pt;
+        font-size: 60pt;
 }
 
 .rounded{
