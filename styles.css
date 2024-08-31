@@ -6,6 +6,15 @@ body{
     text-align:center;
 }
 
+#menuicon{
+    position:fixed;
+    right:10px;
+    top:10px;
+    width:50px;
+    height:50px;
+    border-radius:5px;
+}
+
 /* HEADER */
 nav{
     border-top:1px solid white;
