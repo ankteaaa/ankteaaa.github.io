@@ -15,29 +15,36 @@
 
     <!-- Styles og scripts: -->
     <link rel="stylesheet" href="styles.css" >
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <title>Lektor Andreas Thorngreen</title>
 </head>
 
 <body>
     <img id="menuicon" src="images/menuicon.webp" alt="Menu Ikon">
-    
+    <nav id="burgermenu">
+        <a href="index.html">Home</a><br>
+        <a href="content2like.html" alt="Content 2 like">
+            Content2Like</a><br>
+    </nav>
+
     <header>
     <h1>Lektor Andreas Thorngreen</h1>
-    <video id="vid_matrix" autoplay muted>
-        <source src="video/code.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-
-    <nav>
+    <nav id="mainmenu">
         <a href="index.html">Home
         </a>
         <a href="content2like.html" alt="Content 2 like">
             Content2Like
         </a>
     </nav>
+    
+    <video id="vid_matrix" autoplay muted>
+        <source src="video/code.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+
     </header>
     <main>
         <p class="haandskrift">Content 2 like: Godt for sjælen</p>
