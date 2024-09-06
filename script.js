@@ -1,5 +1,4 @@
-console.log("Mojn!");
-
+// BURGERMENU:
 const menuicon = document.getElementById("menuicon");
 const burgermenu = document.getElementById("burgermenu");
 

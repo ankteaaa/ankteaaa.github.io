@@ -1,5 +1,4 @@
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color:black;
     color:white;
 
@@ -10,7 +9,12 @@ header, main, footer{
     max-width:100%;
 }
 
-#menuicon{
+img, video{
+    width:100%;
+}
+
+/* BURGERMENU: */
+#menuicon{ /* Knappen til at åbne menuen*/
     position:fixed;
     right:10px;
     top:10px;
@@ -19,7 +23,7 @@ header, main, footer{
     border-radius:5px;
 }
 
-#burgermenu{
+#burgermenu{/* Menuen med indhold */
     display:none;
 
     width:300px;
@@ -33,39 +37,59 @@ header, main, footer{
     /*JS viser senere*/
 }
 
-img, video{
-    width:100%;
-}
 
 /* HEADER */
 nav#mainmenu{
     border-top:1px solid white;
     border-bottom:1px solid white;
+    
     padding-top:10px;
     padding-bottom:10px;
-
     margin-bottom:20px;
+
+    transition: all 0.5s ease-out;
 }
+
+nav#mainmenu:hover{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
 nav a, nav a:visited{
     text-decoration:none;
+    text-transform:uppercase;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:16pt;
     color:white;
+    margin-right:10px;
 }
-h1{
-    font-family: "PT Serif", serif;
+
+nav a:hover{
+    color:darkorange;
+}
+
+/* MAIN */
+h1{ /* Logo */
+    font-family: "PT Serif", serif; /* Font til skriften 'Lektor Andreas Thorngreen' */
     font-weight: 100;
     font-style: normal;
     font-size:70pt;
 }
+
+h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:44pt;
+}
+
+h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:22pt;
+    text-transform:uppercase;
+}
+
 #vid_matrix{
     padding-top:-100px;
     padding-bottom:-100px;
-}
-
-
-/* MAIN */
-h2{
-    font-size:20pt;
 }
 
 img#andreas{
@@ -73,7 +97,7 @@ img#andreas{
 }
 
 p.haandskrift{
-        font-family: "Italianno", cursive;
+        font-family: "Italianno", cursive; /* Håndskrift fra Google Fonts */
         font-weight: 400;
         font-style: normal;   
         font-size: 60pt;
