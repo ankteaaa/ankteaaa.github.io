@@ -39,6 +39,12 @@ img, video{
 
 
 /* HEADER */
+header{
+    position:relative;
+    z-index:1;
+    background-color:rgba(0,0,0,0.5);
+}
+
 nav#mainmenu{
     border-top:1px solid white;
     border-bottom:1px solid white;
@@ -87,10 +93,7 @@ h3{
     text-transform:uppercase;
 }
 
-#vid_matrix{
-    padding-top:-100px;
-    padding-bottom:-100px;
-}
+
 
 img#andreas{
     border-radius:5px;
@@ -106,6 +109,23 @@ p.haandskrift{
 .rounded{
     border-radius:20px;
 }
+
+/* LIKE: */
+#vid_matrix{
+    /*padding-top:-100px;*/
+    /*padding-bottom:-100px;*/
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:max-content;
+    z-index:0;
+}
+
+#page_like{
+    position:relative;
+    z-index:1;
+}
+
 
 /* PORTFOLIO */
 #gallery_thumbs{
