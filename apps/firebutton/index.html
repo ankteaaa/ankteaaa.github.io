@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Arcade Fire Button Challenge</title>
+	<script src="game.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+	
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		
+		body{
+			background-color:white;
+		}
+		button{
+			width:300px;
+			height:300px;
+			background-color:red;
+			border:5px solid black;
+			border-radius:50%;
+			box-shadow:5px 5px 5px gray;
+			text-shadow:0px 0px 10px yellow;
+			margin-top:90px;
+			display:block;
+			
+			/* Placering: */
+			margin-left: auto;
+			margin-right: auto;
+			position:relative;
+			
+			/* Font: */
+			font-family: 'Press Start 2P', cursive;
+			font-size: 30pt;
+			text-transform:uppercase;
+			color:black;
+			animation-duration:0.1s;
+			z-index:2;
+		}
+		
+		p{
+			font-family: 'Press Start 2P', cursive;
+			font-size: 50pt;
+			text-shadow:0px 0px 10px yellow;
+		}
+		
+		p#messages {
+			position:fixed;
+			top:20px;
+			width:100%;
+			font-size:30pt;
+			text-align:center;
+			text-transform:uppercase;
+			text-shadow:0px 0px 1px yellow;
+			animation-duration: 1s;
+		}
+		
+		#score{
+			position:fixed;
+			left:50px;
+			top:170px;
+			z-index:2;
+		}
+		
+		#time{
+			position:fixed;
+			top:170px;
+			right:50px;
+			z-index:2;
+		}
+		
+		iframe{
+			display:none;
+		}
+		
+		#trophies{
+			width:100%;
+			height:300px;
+			background-color:aliceblue;
+			position:fixed;
+			bottom:0px;
+			z-index:0;
+			display:flex;
+			justify-content: space-around;
+			border-top:thin solid black;
+		}
+		
+		/* Animations: */
+		@keyframes grow{
+			0%{width:300px; height:300px;}
+			50%{width:310px;height:310px;}
+			100%{width:300px;height:300px;}
+		}
+		
+		@keyframes growLarge{
+			0%{font-size:30pt;}
+			50%{font-size:100pt;}
+			100%{font-size:30pt;}
+		}
+	</style>
+	
+</head>
+
+<body>
+	<p id="messages">Click dammit!</p>
+	
+	<button id="button"> Fire </button>
+	
+	
+	<p id="score">0</p>
+	<p id="time">30</p>
+	
+	<audio id="fx_click" src="assets/audio/switch7.ogg"></audio>
+	<audio id="fx_music" src="assets/audio/bensound-popdance.mp3"></audio>
+	<audio id="fx_levelup" src="assets/audio/levelup.mp3"></audio>
+	
+	<div id="trophies">
+	<!-- All GIFs are from giphy -->
+		<iframe id="trophy1" src="https://giphy.com/embed/xUA7aO0PLIyJffDln2" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+	
+		<iframe id="trophy2" src="https://giphy.com/embed/gxssYj6mrPYA" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+	
+		<iframe id="trophy3" src="https://giphy.com/embed/26xBMuHu0ZFngH7Ta" width="480" height="474" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+	
+	</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* Dandelion Hunt CSS*/
+/* 
+SOURCES:
+Multi-step animations: https://css-tricks.com/using-multi-step-animations-transitions/
+Scale: https://css-tricks.com/almanac/properties/t/transform/
+
+*/
+
+body{
+    margin:0px;
+    font-family:edpsinterlock;
+    background-image:url(assets/images/bg.jpg);
+    background-size: cover;
+	overflow:hidden;
+	text-align:center;
+    }
+
+p{
+    font-size: 80px;
+    text-transform: uppercase;
+    color:aliceblue;
+    position:fixed;
+    z-index:3;
+    text-shadow: 2px 2px 2px black;
+}
+
+h1{
+	font-size: 150px;
+    text-transform: uppercase;
+    color:aliceblue;
+	text-align:center;
+	vertical-align: middle;
+	text-shadow: 0px 0px 15px black;
+}
+
+a{
+	font-size:30px;
+	margin:auto;
+	text-decoration:none;
+	color:black;
+	background-color:yellow;
+	padding:25px;
+	border-radius:10px;
+	box-shadow:2px 2px 5px black;
+}
+
+@keyframes pickDandelion{
+	from{
+		opacity:1;
+		transform:scale(0.5);
+	}
+	
+	to{
+		opacity:0;
+		transform:scale(0.8);
+	}
+}
+
+@keyframes rotateObject{
+    to{transform: rotate(360deg);}
+}
+
+@keyframes growDandelion{
+    from{
+        transform:scale(0.1);
+    }
+    to{
+        transform:scale(0.5);
+    }
+}
+
+@keyframes enterFromLeft{
+    from{
+        left:-100px;
+    }
+    to{
+        left:50px;
+    }
+}
+
+@keyframes enterFromRight{
+    from{
+        right:-100px;
+    }
+    to{
+        right:50px;
+		
+    }
+}
+
+/* Dandelion is the only img tag. Hence only this selector is used.*/
+img{
+	position:absolute;
+    /*animation-iteration-count: infinite;*/
+    animation-timing-function: linear;
+	animation-duration:0.5s;
+	animation-iteration-count: 1;
+	/*animation-timing-function: ease-out;*/
+	transform:scale(0.5);
+}
+
+#score {
+    bottom:20px;
+    left:50px;
+    animation-name:enterFromLeft;
+    animation-duration:0.5s;
+    animation-timing-function: ease-out;
+}
+
+#time {
+    bottom:20px;
+    right:50px;
+    animation-name:enterFromRight;
+    animation-duration:0.8s;
+    animation-timing-function: ease-out;
+}
+
+/* Fonts */
+@font-face{
+    font-family:edpsinterlock;
+    src: url(assets/fonts/edpsinterlock.otf);
+}

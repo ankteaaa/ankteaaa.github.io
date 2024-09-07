@@ -1,0 +1,70 @@
+/* Baggrundsbilledet er et casinobord. */
+body{
+    margin:0px;
+    font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    color:black;
+    background-image:url("assets/images/jpg/bg.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+h1{
+	color:white;
+}
+
+/* Play-knappen: */
+footer{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	padding-bottom:5%;
+}
+#play{
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size:50pt;
+	border: 1px solid white;
+	border-radius:3pt;
+	padding-left:40pt;
+	padding-right:40pt;
+	padding-top:2pt;
+	padding-bottom:2pt;
+	background-color:aliceblue;
+}
+
+
+/* TABLES: */
+#p1Table{
+	position:fixed;
+	top:15%;
+	left:15%;
+	z-index:1;
+}
+
+#p2Table {
+	position:fixed;
+	top:15%;
+	right:15%;
+	z-index:1;
+}
+
+
+/* KORT: */
+#p1Table img, #p2Table img{
+	display: none;
+	width:300px;
+}
+
+/* WINNERANNOUNCEMENT: */
+#winnerAnnouncement {
+	position:fixed;
+	top:0%;
+	width:100%;
+	text-align:center;
+	z-index:2;
+	font-size:30pt;
+	color:white;
+}
+/* Note: Bagsiden vises af Javascript. */
+
