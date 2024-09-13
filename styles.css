@@ -16,6 +16,7 @@ img, video{
 /* BURGERMENU: */
 #menuicon{ /* Knappen til at åbne menuen*/
     position:fixed;
+    z-index:10;
     right:10px;
     top:10px;
     width:50px;
@@ -26,6 +27,7 @@ img, video{
 #burgermenu{/* Menuen med indhold */
     display:none;
 
+
     width:300px;
     min-height:100px;
     color:white;
@@ -34,6 +36,7 @@ img, video{
     position:fixed;
     right: 10px;
     top: 100px;
+    z-index:10;
     /*JS viser senere*/
 }
 
@@ -80,6 +83,7 @@ h1{ /* Logo */
     font-weight: 100;
     font-style: normal;
     font-size:8vw;
+    text-shadow: 3px 3px 2px gray;
 }
 
 h2{ /* Bruges til den største overskrift i content */
