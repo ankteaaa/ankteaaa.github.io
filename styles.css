@@ -16,6 +16,7 @@ img, video{
 /* BURGERMENU: */
 #menuicon{ /* Knappen til at åbne menuen*/
     position:fixed;
+    z-index:10;
     right:10px;
     top:10px;
     width:50px;
@@ -26,6 +27,7 @@ img, video{
 #burgermenu{/* Menuen med indhold */
     display:none;
 
+
     width:300px;
     min-height:100px;
     color:white;
@@ -34,6 +36,7 @@ img, video{
     position:fixed;
     right: 10px;
     top: 100px;
+    z-index:10;
     /*JS viser senere*/
 }
 
@@ -80,14 +83,15 @@ h1{ /* Logo */
     font-weight: 100;
     font-style: normal;
     font-size:8vw;
+    text-shadow: 3px 3px 2px gray;
 }
 
-h2{
+h2{ /* Bruges til den største overskrift i content */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:44pt;
 }
 
-h3{
+h3{ /* Bruges til den næststørste overskrift i content */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:22pt;
     text-transform:uppercase;
@@ -103,6 +107,14 @@ main section img{
     width:60%;
 }
 
+h4{/* Endnu mindre overskrift */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:18pt;
+}
+
+p, ol, ul{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
 img#andreas{
@@ -118,6 +130,31 @@ p.haandskrift{
 
 .rounded{
     border-radius:20px;
+}
+
+/* LEARN: */
+iframe{
+    max-width:100%;
+}
+.leftright50{
+    display:flex;
+    margin-bottom:30px;
+}
+
+.leftright50 div{
+    width:50%;
+}
+
+.leftright50 div:first-child{
+    text-align:right;
+    padding-right:20px;
+}
+.leftright50 div{
+    text-align:left;
+}
+
+.fullwidth{
+    width:100%;
 }
 
 /* LIKE: */
