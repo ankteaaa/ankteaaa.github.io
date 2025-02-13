@@ -1,0 +1,17 @@
+/* PORTFOLIO */
+#gallery_thumbs{
+    width:100%;
+    height:150px;
+    display:flex;
+    justify-content:space-around;
+    overflow-x:auto;
+}
+#gallery_thumbs img{
+    width:150px;
+    height:100px;
+    transition:0.5s transform;
+}
+
+#gallery_thumbs img:hover{
+    transform: scale(1.2);
+}

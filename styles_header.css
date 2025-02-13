@@ -5,6 +5,14 @@ header{
     background-color:rgba(0,0,0,0.5);
 }
 
+h1{ /* Logo */
+    font-family: "PT Serif", serif; /* Font til skriften 'Lektor Andreas Thorngreen' */
+    font-weight: 100;
+    font-style: normal;
+    font-size:8vw;
+    text-shadow: 3px 3px 2px gray;
+}
+
 nav#mainmenu{
     border-top:1px solid white;
     border-bottom:1px solid white;
