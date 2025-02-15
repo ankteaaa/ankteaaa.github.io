@@ -1,5 +1,7 @@
-    .montecarlo-regular {
-        font-family: "MonteCarlo", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
+ body{
+  background-color:white;
+  color:black;
+ }
+ header{
+  background-color:white;
+ }
