@@ -79,6 +79,30 @@ p.haandskrift{
     border-radius:20px;
 }
 
+
+/* SCROLLBAR STYLING:*/
+/* width */ 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track: Semi-transparent */
+::-webkit-scrollbar-track {
+    background:rgba(0,0,0,0.5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /*background: #888;*/
+    background:darkslategray;
+    border-radius:8px;
+}
+
+/* Handle on hover*/
+::-webkit-scrollbar-thumb:hover {
+    background:grey;
+}
+
 /* LAYOUTBOKSE: */
 .scrollX{
     overflow-x:scroll;
