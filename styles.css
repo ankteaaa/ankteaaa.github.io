@@ -83,14 +83,22 @@ p.haandskrift{
 .scrollX{
     overflow-x:scroll;
     overflow-y:hidden;
-    height:450px;
     display:flex;
+    justify-content:space-around;
+    height:300px;
+    width:100%;
+    padding-bottom:10px;
+    padding-top:10px;
 }
 
 .scrollX iframe{
-    display:inline-block;
+    display:block;
+    min-width:40%;/* Width virker ikke på iframen, men min-width gør. */
     border-radius:10px;
-    margin:10px;
+    margin-right:20px;
+    flex:1;
+    border:1px solid black;
+    box-shadow:2px 2px 5px black;
 }
 
 
