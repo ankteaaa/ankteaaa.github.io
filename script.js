@@ -6,7 +6,6 @@ burgermenu.style.display = "none";
 burgermenu.style.color = "green";
 
 menuicon.onclick = openBurgermenu;
-menuicon.onmouseover = openBurgermenu;
 burgermenu.onclick = closeBurgermenu;
 
 function openBurgermenu(){
