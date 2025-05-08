@@ -190,11 +190,12 @@ p.haandskrift{
 #gamehist #games div{
     display:flex;
     justify-content:space-around;
+    margin-bottom:20px;
 }
 
 /* Billede til venstre, der viser et screenshot: */
 #gamehist #games div img{
-    width:15%;
+    width:30%;
     height:auto;
     border-radius:8px;
     display:inline-block;
