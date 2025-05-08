@@ -16,30 +16,34 @@ function closeBurgermenu(){
     burgermenu.style.display = "none";
 }
 
-/* GALLERY on PORTFOLIO: */
-const gallery_big = document.getElementById("gallery_big");
-const gal_clouds = document.getElementById("gal_clouds");
-const gal_forelf = document.getElementById("gal_forelf");
-const gal_kirke = document.getElementById("gal_kirke");
-const gal_swans = document.getElementById("gal_swans");
+/* SORTERING PÅ GAMEHIST: */
+const btn_platformer = document.getElementById("platformer");
 
-gal_clouds.onclick = function(){
-    showBig(this);
+btn_platformer.onclick = function(){
+    // Skjul alle spil først:
+    const allgames = document.querySelectorAll("#gamehist #games div");
+    allgames.forEach((game) => {
+        game.style.display = "none";
+    });
+
+    // Vis kun platformer-spil:
+    const platformergames = document.querySelectorAll(".platformer");
+    platformergames.forEach((game) => {
+        game.style.display = "flex";
+    });
+
 }
 
-gal_forelf.onclick = function(){
-    showBig(this);
-}
+const btn_fps = document.getElementById("fps");
 
-gal_kirke.onclick = function(){
-    showBig(this);
-}
+btn_fps.onclick = function(){
+    const allgames = document.querySelectorAll("#gamehist #games div");
+    allgames.forEach((game) => {
+        game.style.display = "none";
+    });
 
-gal_swans.onclick = function(){
-    showBig(this);
-}
-
-function showBig(klikketThumb){
-    let newSource = klikketThumb.src;
-    gallery_big.src = newSource;
+    const fpsgames = document.querySelectorAll(".fps");
+    fpsgames.forEach((game) => {
+        game.style.display = "flex";
+    });
 }

@@ -63,8 +63,6 @@ h4{/* Endnu mindre overskrift */
 
 p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-right:20%;
-    padding-left:20%;
 }
 
 /* Billeder: */
@@ -147,4 +145,66 @@ p.haandskrift{
     padding:10px;
 
     text-align:left;
+}
+
+/* GAMEHIST */
+/* #gamehist: Container, der indeholder både leftnav og contentet med spil. */
+#gamehist{
+    display:flex;
+    justify-content:space-around;
+}
+
+/* #leftnav: Indeholder knapper, skal fylde ca. 20% af venstre side: */
+#gamehist #leftnav{
+    width:20%;
+    display:flex;
+    flex-direction:column;
+    position:sticky;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+/* Knapperne i navigationen i venstre side: */
+#gamehist #leftnav button{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-bottom:5px;
+    background-color:rgba(0,0,0,0);
+    border:1px solid cadetblue;
+    border-radius:5px;
+    color:white;
+    transition:all 1s;
+}
+
+#gamehist #leftnav button:hover{
+    background-color:cadetblue;
+}
+
+/* #games: Containeren, der viser sektionerne med indholdet: */
+#gamehist #games{
+    width:80%;
+}
+
+#gamehist #games div{
+    display:flex;
+    justify-content:space-around;
+}
+
+/* Billede til venstre, der viser et screenshot: */
+#gamehist #games div img{
+    width:15%;
+    height:auto;
+    border-radius:8px;
+    display:inline-block;
+}
+
+/* Section der indeholder overskrift og tekst om spillet: */
+#gamehist #games div section{
+    width:70%;
+    padding:10px;
+    border-radius:10px;
+    text-align:left;
+    display:block;
 }
