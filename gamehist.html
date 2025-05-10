@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_header.css">
+    <link rel="stylesheet" href="styles_gamehist.css">
     <script src="script.js" defer></script>
 
     <title>Game History</title>
@@ -36,24 +37,29 @@
     </header>
 
     <main id="gamehist">
+        
+        <!-- Navigation til spillene: -->
         <nav id="leftnav">
             <button id="platformer">Platformer</button>
             <button id="fps">FPS</button>
+            <button id="racing">Racing</button>
         </nav>
-        
+
+        <!-- Indeholder sektionerne med spil: -->
         <div id="games">
             <!-- PLATFORMSPIL: -->
-            <div class="platformer">
+            <div id="supermario" class="platformer">
                 
                 <img src="https://images.nintendolife.com/screenshots/11397/large.jpg" alt="Game History" >
                 
                 <section>
                     <h3>Super Mario</h3>
-                    <p>Man kan styre en karakter højre og venstre, den kan hoppe. Der er fjender, som karakteren kan hoppe oven på og slå ihjel på den måde.</p>
+                    <p>De fleste kender Mario 😊 Man kan styre ham til højre og venstre, han kan hoppe, og der er fjender, som karakteren kan hoppe oven på og slå ihjel på den måde.</p>
+                    <a href="https://youtu.be/rLl9XBg7wSs?si=l_woriIOOOkMC3uG" target="_blank">Se video</a>
                 </section>
             </div>
 
-            <div class="platformer">
+            <div id="princeofpersia" class="platformer">
                 
                 <img src="https://www.popot.org/custom_levels/screenshots/0000002_2.png" alt="Prince of Persia" >
                 
@@ -63,10 +69,8 @@
                 </section>
             </div>
 
-            <div class="platformer">
-                
+            <div id="anotherworld" class="platformer">
                 <img src="https://www.bestoldgames.net/img/games/another-world/another-world-05.webp" alt="Another World" >
-                
                 <section>
                     <h3>Another World</h3>
                     <p>Endnu en gang flot animation. Dette spil må Limbo og Inside udviklerne Playdead have skævet lidt til. Der er nemlig ingen dialog, men en masse stemning og storytelling i miljøerne.</p>
@@ -74,16 +78,38 @@
             </div>
 
             <!-- FPS: -->
-            <div class="fps">
-            
-                <img src="https://images.sftcdn.net/images/t_app-cover-s,f_auto/p/2dd7eb78-96d1-11e6-8490-00163ed833e7/2988086003/far-cry-screenshot.jpg" alt="Far Cry">
-            
+            <div id="farcry" class="fps">
+                <img src="https://cdn.mobygames.com/covers/17096203-far-cry-6-windows-front-cover.jpg" alt="Far Cry">
                 <section>
-                    <h3>Far Cry</h3>
-                    <p>Et first-person shooter, der overhalede Doom 3.</p>
+                    <h3>Far Cry Serien</h3>
+                    <p>Far Cry serien er open-world first-person shooters. Det første spil overraskede i 2007, da verden ventede på Doom 3. Grafikken var overvældende flot, og gameplayet overraskende lækkert.</p>
                 </section>
-        </div>
+            </div>
 
+            <div id="wolfenstein" class="fps">
+                <img src="https://4kwallpapers.com/images/walls/thumbs/11868.jpg" alt="wolfenstein">
+                <section>
+                    <h3>Wolfenstein Serien</h3>
+                    <p>Det ikoniske første Wolfenstein fra 1992 definerede genren. I 00'erne kom rebootet Return to Castle Wolfenstein, og endnu et reboot skete i 10'erne, hvor "The New Order" udkom. Siden er også en 2'er, samt en række andre spil udkommet.</p>
+                </section>
+            </div>
+
+            <div id="counterstrike" class="fps">
+                <img src="https://linuxaria.com/wp-content/uploads/2013/02/counterstrike.jpg" alt="counterstrike">
+                <section>
+                    <h3>Counterstrike</h3>
+                    <p>Multiplayer spillet, som udkom samtidig med det første Half-life og kørte i samme engine, blev et stort hit. Det er et eksempel på hvordan "FPS" i dag er synonymt med competitive online multiplayer sammen med titler som Overwatch. Counterstrike blev pudset af i "Counterstrike Source".</p>
+                </section>
+            </div>
+
+            <!-- RACING: -->
+            <div id="supercars" class="racing">
+                <img src="https://images.launchbox-app.com/7739f473-1afc-4bf7-8457-b5bed7689407.png" alt="supercars">
+                <section>
+                    <h3>Super Cars</h3>
+                    <p>På datidens konsoller var 2D herskende. Det kaldte ofte på at racerspil skulle laves med et top-down perspektiv. Det første GTA havde også sådan et. I spillet kan man skyde hinanden ned, og opfølgeren Super Cars II havde en perfekt lokal multiplayer game mode, hvor man kunne skyde hinanden. Både frustrerende men også rigtigt sjovt.</p>
+                </section>
+            </div>
         </div><!-- Slut <div id="games"> -->
     </main>
 </body>

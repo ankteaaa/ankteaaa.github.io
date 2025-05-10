@@ -34,8 +34,8 @@ btn_platformer.onclick = function(){
 
 }
 
+// FPS Button og handler:
 const btn_fps = document.getElementById("fps");
-
 btn_fps.onclick = function(){
     const allgames = document.querySelectorAll("#gamehist #games div");
     allgames.forEach((game) => {
@@ -44,6 +44,20 @@ btn_fps.onclick = function(){
 
     const fpsgames = document.querySelectorAll(".fps");
     fpsgames.forEach((game) => {
+        game.style.display = "flex";
+    });
+}
+
+// Racing Button og handler:
+const btn_racing = document.getElementById("racing");
+btn_racing.onclick = function(){
+    const allgames = document.querySelectorAll("#gamehist #games div");
+    allgames.forEach((game) => {
+        game.style.display = "none";
+    });
+
+    const racinggames = document.querySelectorAll(".racing");
+    racinggames.forEach((game) => {
         game.style.display = "flex";
     });
 }
