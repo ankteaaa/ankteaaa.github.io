@@ -2,3 +2,12 @@
 img#andreas{
     border-radius:5px;
 }
+
+/* Baggrundsvideo: */
+#vid_matrix{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:0;
+}
