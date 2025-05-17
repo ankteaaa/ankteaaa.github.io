@@ -1,27 +1,22 @@
 
 /* APPS: */
 
-/* Main fylder 100% og bruger flexbox til alt inden i: */
-#main_apps{
-    width:100%;
-    display:flex;
-    flex-wrap: wrap;
-    overflow:hidden;
-}
+/* Main fylder 100% og bruger flexbox til alt inden i:
 
-/* Hvert billede er et link, og det skal fylde 50%: */
-#main_apps a{
+/* Hvert billede er et link, og det skal fylde 50%:
+main#apps a{
     width:50%;
 }
+*/
 
 /* Transition på alle billeder: */
-#main_apps a img{
+main#apps a img{
     width:90%;
     border-radius:10px;
     transition:all 0.5s;
 }
 
 /* Hovereffekt: Når man hviler musen på billedet, bliver det 1.2 scale i en animation: */
-#main_apps a img:hover{
+main#apps a img:hover{
     transform: scale(1.2);
 }
