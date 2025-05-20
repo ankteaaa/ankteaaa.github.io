@@ -16,7 +16,37 @@ function closeBurgermenu(){
     burgermenu.style.display = "none";
 }
 
-/* SORTERING PÅ GAMEHIST: */
+/* SORTERING EFTER GENRE: */
+function showGamesByClass(className) {
+    const allgames = document.querySelectorAll("#gamehist #gamecontainer section");
+    allgames.forEach((game) => {
+        game.style.display = "none";
+    });
+
+    const selectedGames = document.querySelectorAll("." + className);
+    selectedGames.forEach((game) => {
+        game.style.display = "block";
+    });
+}
+
+const btn_platformer = document.getElementById("platformer");
+btn_platformer.onclick = function() {
+    showGamesByClass("platformer");
+};
+
+const btn_fps = document.getElementById("fps");
+btn_fps.onclick = function() {
+    showGamesByClass("fps");
+};
+
+const btn_racing = document.getElementById("racing");
+btn_racing.onclick = function() {
+    showGamesByClass("racing");
+};
+
+
+/* SORTERING PÅ GAMEHIST: DEPRECATED: */
+/*
 const btn_platformer = document.getElementById("platformer");
 
 btn_platformer.onclick = function(){
@@ -61,3 +91,4 @@ btn_racing.onclick = function(){
         game.style.display = "flex";
     });
 }
+*/

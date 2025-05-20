@@ -1,12 +1,12 @@
 /* GAMEHIST */
-/* #gamehist: Container, der indeholder både leftnav og contentet med spil. */
+/* #gamehist: <main>, der indeholder både leftnav og contentet med spil. */
 #gamehist{
     display:flex;
     justify-content:space-around;
 }
 
-/* #leftnav: Indeholder knapper, skal fylde ca. 20% af venstre side: */
-#gamehist #leftnav{
+/* #leftnav: Navigation med sorteringsknapper - skal fylde ca. 20% af venstre side: */
+#leftnav{
     width:20%;
     display:flex;
     flex-direction:column;
@@ -17,7 +17,7 @@
 }
 
 /* Knapperne i navigationen i venstre side: */
-#gamehist #leftnav button{
+#leftnav button{
     padding-top:10px;
     padding-bottom:10px;
     padding-left:5px;
@@ -31,48 +31,46 @@
     min-width:70px;
 }
 
-#gamehist #leftnav button:hover{
+#leftnav button:hover{
     background-color:cadetblue;
 }
 
-/* #games: Containeren, der viser sektionerne med indholdet: */
-#gamehist #games{
+/* GAMECONTAINER: */
+/* Containeren med kortene skal være 80% */
+#gamecontainer{
     width:80%;
-}
-
-#gamehist #games div{
     display:flex;
-    justify-content:space-around;
-    margin-bottom:20px;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
-
-/* Billede til venstre, der viser et screenshot: */
-#gamehist #games div img{
-    width:40%;
-    height:auto;
-    border-radius:8px;
-    display:inline-block;
+/* #games: Kort med spildata. Leder videre til artikel: */
+#gamecontainer section{
+    width:200px;
+    border-radius:5px;
+    border: 1px solid transparent;
+    border-color:cadetblue;
+    white-space: normal; /* Tekst fortsætte næste linje */
+    word-break: break-word; /* Tekst fortsætte næste linje */
+    transition:all 0.5s;
 }
 
-/* Section der indeholder overskrift og tekst om spillet: */
-#gamehist #games div section{
-    width:70%;
-    padding:10px;
-    border-radius:10px;
+#gamecontainer section:hover{
+    transform:scale(1.1);
+    border-color:cadetblue;
+}
+
+#gamecontainer section img{
+    width:100%;
+}
+
+#gamecontainer section ul{
+    list-style-type:none;
     text-align:left;
-    display:block;
+    padding-left:8px;
 }
 
-/* Mobil: Billede og sektion under hinanden: */
-@media screen and (max-width:700px){
-    #gamehist #games div{
-        flex-direction:column;
-        align-items: center;
-    }
-
-    #gamehist #games div img{
-        width:80%;
-        height:auto;
-    }
+#gamecontainer section span{
+    font-weight:bold;
+    text-transform:uppercase;
 }

@@ -64,9 +64,24 @@ h4{/* Endnu mindre overskrift */
     font-size:18pt;
 }
 
+/* Bruges i kort på gamehist > gamecontainer*/
+h5{
+    font-family:anta, sans-serif;
+    font-size:1.5rem;
+    color:cadetblue;
+    text-transform:uppercase;
+    text-align:left;
+    padding-left:5px;
+}
+
 p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:15pt;
+}
+
+ul, li{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:12pt;
 }
 
 /* Billeder: */
