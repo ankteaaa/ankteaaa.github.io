@@ -1,0 +1,57 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.hero{
+    width:100%;
+}
+#backarrow{
+    background-color:white;
+    width:100px;
+    position:fixed;
+    left:0px;
+    top:0px;
+    mix-blend-mode: lighten;
+}
+
+/* GALLERY: */
+.gallery{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+
+    margin-bottom:20px;
+}
+
+.gallery img{
+    width:470px;
+    height:300px;
+}
+
+article{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+article ul{
+    text-align:left;
+    list-style-type:none;
+
+    margin-bottom:20px;
+}
+
+article ul span{
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+article p{
+    text-align:left;
+}
+
+iframe{
+    width:800px;
+    height:400px;
+    max-width:100%;
+}

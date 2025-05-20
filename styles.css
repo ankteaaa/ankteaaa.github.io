@@ -45,6 +45,12 @@ img, video{
 }
 
 /* MAIN */
+h1{
+    font-family:anta, sans-serif;
+    font-size:4rem;
+    color:cadetblue;
+    text-transform:uppercase; 
+}
 h2{ /* Bruges til den største overskrift i content */
     font-family:anta, sans-serif;
     font-size:2rem;
