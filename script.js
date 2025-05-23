@@ -44,6 +44,11 @@ btn_racing.onclick = function() {
     showGamesByClass("racing");
 };
 
+const btn_shooter = document.getElementById("shooter");
+btn_shooter.onclick = function(){
+    showGamesByClass("shooter");
+};
+
 
 /* SORTERING PÅ GAMEHIST: DEPRECATED: */
 /*
