@@ -50,6 +50,11 @@ btn_shooter.onclick = function(){
 };
 
 
+const btn_beatemup = document.getElementById("beatemup");
+btn_beatemup.onclick = function() {
+    showGamesByClass("beatemup");
+};
+
 /* SORTERING PÅ GAMEHIST: DEPRECATED: */
 /*
 const btn_platformer = document.getElementById("platformer");
