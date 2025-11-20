@@ -32,8 +32,10 @@ h1{ /* Logo */
 }
 
 nav#mainmenu:hover{
-    padding-top:20px;
-    padding-bottom:20px;
+    /* 
+    Her var en ændring i padding. 
+    Kunne ikke lide det.
+    */
     border-bottom-color:white;
     border-top-color:white;
 }
