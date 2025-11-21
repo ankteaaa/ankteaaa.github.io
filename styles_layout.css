@@ -71,3 +71,81 @@
     margin-top:30px;
     margin-bottom:30px;
 }
+
+/* LEARN: Specifikke for "learn": */
+/* Submenu folder sig ud når man trykker på 'learn' */
+#submenu{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+
+    width:100%; /* Måske animere? */
+
+    background-color:rgba(0,0,0,0.9);
+    border-radius:10px;
+    border-bottom:1px solid cadetblue;
+
+    position:fixed;
+    top:-900px;
+    z-index:200;
+    opacity:0;
+
+    animation-duration:1s;
+    animation-delay:0.1s;
+    animation-fill-mode: forwards;
+    /* animation-name by JS.*/
+
+}
+
+@keyframes submenuEntry{
+    from{top:-400px;opacity:0}
+    to{top:0px;opacity:1}
+}
+
+#submenu img{
+    width:30%;
+    height:20%;
+    margin:5%;
+}
+
+#submenu p{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30pt;
+    z-index: 2;
+    transition:all 0.5s;
+    font-size:1.4em;
+}
+
+#submenu p:hover{
+    cursor:hand;
+    font-size:4em;
+}
+
+/* Andet: */
+iframe{
+    max-width:100%;
+}
+.leftright50{
+    display:flex;
+    margin-bottom:30px;
+}
+
+.leftright50 div{
+    width:50%;
+}
+
+.leftright50 div:first-child{
+    text-align:right;
+    padding-right:20px;
+}
+.leftright50 div{
+    text-align:left;
+}
+
+.fullwidth{
+    width:100%;
+}
