@@ -10,7 +10,7 @@ function unfoldSubmenu(){
     // CSS findes i forvejen, nu skabes submenuen og skrives i HTML:
     divSubmenu = document.createElement("div");
     divSubmenu.id = "submenu";
-    divSubmenu.innerHTML = '<img src="images/learnlogos/jslogo.png">' + '<img src="images/learnlogos/unitylogowhite.png">' + '<p onclick="closeSubmenu()">X</p>';
+    divSubmenu.innerHTML = '<a href="learn_js.html">' + '<img src="images/learnlogos/jslogo.png">' + '</a>' + '<a href="learn_unity.html">' + '<img src="images/learnlogos/unitylogowhite.png">' + '</a>' + '<p onclick="closeSubmenu()">X</p>';
     htmlBody.appendChild(divSubmenu);
 
     // Animationen kommer på:

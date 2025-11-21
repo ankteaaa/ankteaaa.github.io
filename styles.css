@@ -126,3 +126,8 @@ ol, ul{
 ::-webkit-scrollbar-thumb:hover {
     background:grey;
 }
+
+/* Hjælpeklasser: */
+.learnlogo {
+    width:60%;
+}
