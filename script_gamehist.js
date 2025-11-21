@@ -1,5 +1,5 @@
 // BODY:
-const htmlBody = document.querySelector("body");
+//const htmlBody = document.querySelector("body");
 
 // BURGERMENU:
 const menuicon = document.getElementById("menuicon");
