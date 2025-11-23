@@ -67,6 +67,30 @@
     }
 }
 
+/* FITTY YT: YOUTUBE VIDEO EMBED MED TEKST */
+.fittyYT {
+    display:flex;
+}
+
+.fittyYT div:first-child{
+width:60%;
+}
+
+.fittyYT div:nth-child(2){
+    width:40%;
+    text-align:left;
+    margin-left:10px;
+    margin-righ:10px;
+}
+
+.fittyYT iframe{
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+}
+
+
+
 /* CENTERED: En boks med centreret indhold til introtekster: */
 .centered{
     width:100%;
