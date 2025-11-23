@@ -60,7 +60,7 @@ h2{ /* Bruges til den største overskrift i content */
 
 h3{ /* Bruges til den næststørste overskrift i content */
     font-family:anta, sans-serif;
-    font-size:22pt;
+    font-size:16pt;
     text-transform:uppercase;
     color:cadetblue;
 }
