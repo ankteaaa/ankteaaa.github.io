@@ -25,12 +25,14 @@
 }
 
 /* FITTY-FITTY: */
+/* Brug en <div> med denne class som wrapper for sektionen: */
 .fittyfitty {
     display:flex;
     position:relative; /* For at kunne placere noget absolute inden i. */
     z-index:1;
 }
 
+/* Inden i wrapper div'en skal der være 2 <div>: */
 .fittyfitty div{
     flex:1;
     width:50%;
@@ -46,13 +48,14 @@
     background-color:rgba(0,0,0,0.5)
 }
 
+/* Hvis du bruger et billede i en af <div>'erne: */
 .fittyfitty div img{
     width:100%;
     height:auto;
     border-radius:5px;
 }
 
-/* Under 400px stilles boksene under hinanden: */
+/* Responsive: Under 400px stilles boksene under hinanden: */
 @media screen and (max-width:500px){
     .fittyfitty{
         display:block;
@@ -95,13 +98,19 @@
     animation-duration:0.8s;
     animation-fill-mode: forwards;
     /* animation-name by JS.*/
-
 }
 
+/* Submenu: Animationer: */
 @keyframes submenuEntry{
     from{top:-400px;opacity:0}
     to{top:0px;opacity:1}
 }
+
+/*
+#submenu a{
+    width:50%;
+}
+*/
 
 #submenu img{
     width:100%; /*Was: 30%*/
