@@ -94,11 +94,19 @@ width:60%;
 /* CENTERED: En boks med centreret indhold til introtekster: */
 .centered{
     width:100%;
-    text-align:center;
+    display:flex;
+    justify-content:center;
     margin-top:50px;
     margin-bottom:50px;
     padding-left:20px;
     padding-right:20px;
+}
+
+/* Centered > section: Er i midten med padding i top og bund. */
+.centered section{
+    width:80%;
+    padding-top:5%;
+    padding-bottom:5%;
 }
 
 /* LEARN: Specifikke for "learn": */
