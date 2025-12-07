@@ -80,7 +80,7 @@ width:60%;
     width:40%;
     text-align:left;
     margin-left:10px;
-    margin-righ:10px;
+    margin-right:10px;
 }
 
 .fittyYT iframe{
@@ -107,6 +107,10 @@ width:60%;
     width:80%;
     padding-top:5%;
     padding-bottom:5%;
+}
+
+.centered section p{
+    text-align:left;
 }
 
 /* LEARN: Specifikke for "learn": */
